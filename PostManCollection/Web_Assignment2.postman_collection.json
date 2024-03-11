@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "d87ab008-fddc-41a3-bc5c-dd4f654fd5e6",
+		"name": "Web_Assignment2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31647375"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "CreateComment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 73444,\r\n    \"product_id\": 2,\r\n    \"rating\": 5,\r\n    \"images\": [\"trenchCoat.jpg\"],\r\n    \"text\": \"This product is amazing!\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/WebAssignment2/comments.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"WebAssignment2",
+								"comments.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Comments",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update Comment",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Spring Dress\",\r\n    \"image\": \"Dress1.jpg\",\r\n    \"price\": 19.99,\r\n    \"shipping_cost\": 5.00\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/WebAssignment2/product.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"WebAssignment2",
+								"product.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Products",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update Product",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Black Party Gown\",\r\n    \"image\": \"blackDress.jpg\",\r\n    \"price\": 20.99,\r\n    \"shipping_cost\": 5.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/WebAssignment2/product.php?id=9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"WebAssignment2",
+								"product.php"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "get Cart Details",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Add To Cart",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Remove From Cart",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update Cart",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Get Order Details",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Place Order",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/WebAssignment2/order.php?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"WebAssignment2",
+								"order.php"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
